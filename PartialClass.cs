@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace PW10_DB
 {
@@ -25,5 +26,21 @@ namespace PW10_DB
             }
         }
 
+        public SolidColorBrush CustomerColor
+        {
+            get
+            {
+                BaseClass.Base.Users.Where(x => x.IDUser == IDUser);
+                switch (Users.IDGender)
+                {
+                    case 1:
+                        return Brushes.LightBlue;
+                    case 2:
+                        return Brushes.LightPink;
+                    default:
+                        return Brushes.White;
+                }
+            }
+        }
     }
 }
