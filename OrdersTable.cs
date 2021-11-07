@@ -12,25 +12,25 @@ namespace PW10_DB
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class OrdersTable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Users()
+        public OrdersTable()
         {
-            this.OrdersTable = new HashSet<OrdersTable>();
+            this.TimeTable = new HashSet<TimeTable>();
+            this.WorkersTable = new HashSet<WorkersTable>();
         }
     
+        public int IDOrder { get; set; }
         public int IDUser { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string Login { get; set; }
-        public int Password { get; set; }
-        public int IDGender { get; set; }
-        public int IDRole { get; set; }
+        public int IDPers { get; set; }
+        public int WorkTime { get; set; }
     
-        public virtual GenderTable GenderTable { get; set; }
+        public virtual PetsTable PetsTable { get; set; }
+        public virtual Users Users { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrdersTable> OrdersTable { get; set; }
-        public virtual RoleTable RoleTable { get; set; }
+        public virtual ICollection<TimeTable> TimeTable { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<WorkersTable> WorkersTable { get; set; }
     }
 }

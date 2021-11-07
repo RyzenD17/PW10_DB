@@ -26,7 +26,13 @@ namespace PW10_DB
         }
     
         public virtual DbSet<GenderTable> GenderTable { get; set; }
+        public virtual DbSet<OrdersTable> OrdersTable { get; set; }
+        public virtual DbSet<PetsTable> PetsTable { get; set; }
         public virtual DbSet<RoleTable> RoleTable { get; set; }
+        public virtual DbSet<ServicesTable> ServicesTable { get; set; }
+        public virtual DbSet<TimeTable> TimeTable { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<WorkersTable> WorkersTable { get; set; }
+        public virtual DbSet<WorkTimeTable> WorkTimeTable { get; set; }
     }
 }

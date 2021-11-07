@@ -19,7 +19,7 @@
                 <DataGridTextColumn Header="Роль" Width="150" Binding="{Binding RoleTable.Role}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-            <Button Width="150" Height="30" Click="Button_Click" >Назад</Button>
+            <Button Width="150" Height="30" Click="Button_Click" >В меню</Button>
          </StackPanel>
         
     </Grid>

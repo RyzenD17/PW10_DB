@@ -34,5 +34,10 @@ namespace PW10_DB
         {
             FrameClass.FrameMain.Navigate(new AdmShowPage());
         }
+
+        private void ShowOrders_Click(object sender, RoutedEventArgs e)
+        {
+            FrameClass.FrameMain.Navigate(new AdminShowOrders());
+        }
     }
 }
