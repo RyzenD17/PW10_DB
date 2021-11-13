@@ -12,13 +12,12 @@ namespace PW10_DB
     using System;
     using System.Collections.Generic;
     
-    public partial class WorkersTable
+    public partial class sysdiagrams
     {
-        public int ID { get; set; }
-        public int IDOrder { get; set; }
-        public int IDService { get; set; }
-    
-        public virtual OrdersTable OrdersTable { get; set; }
-        public virtual ServicesTable ServicesTable { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

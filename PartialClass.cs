@@ -17,11 +17,11 @@ namespace PW10_DB
                 switch(Users.IDGender)
                 {
                     case 1:
-                        return "Заказчик - " + Users.Surname + Users.Name;
+                        return "Заказчик - " + Users.Surname +" "+ Users.Name;
                     case 2:
-                        return "Заказчица -  " + Users.Surname + Users.Name;
+                        return "Заказчица -  " + Users.Surname + " " + Users.Name;
                     default:
-                        return "Пол не определен" + Users.Surname + Users.Name;
+                        return "Пол не определен" + Users.Surname + " " + Users.Name;
                 }
             }
         }

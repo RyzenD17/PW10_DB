@@ -23,7 +23,7 @@ namespace PW10_DB
     
         public int IDOrder { get; set; }
         public int IDUser { get; set; }
-        public int IDPers { get; set; }
+        public int IDPets { get; set; }
         public int WorkTime { get; set; }
     
         public virtual PetsTable PetsTable { get; set; }
